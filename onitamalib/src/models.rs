@@ -79,6 +79,13 @@ impl Point {
     }
 }
 
+#[derive(Copy, Clone, Serialize, Deserialize, Debug)]
+pub enum CardDirection {
+    Right,
+    Left,
+    Balanced,
+}
+
 #[derive(Eq, PartialEq, Copy, Clone, IntoEnumIterator, Debug, Serialize, Deserialize)]
 pub enum Card {
     Tiger,
@@ -97,6 +104,24 @@ pub enum Card {
     Boar,
     Eel,
     Cobra,
+    Fox,
+    Dog,
+    Giraffe,
+    Panda,
+    Bear,
+    Kirin,
+    SeaSnake,
+    Viper,
+    Phoenix,
+    Mouse,
+    Rat,
+    Turtle,
+    Tanuki,
+    Iguana,
+    Sable,
+    Otter,
+    Goat,
+    Sheep,
 }
 
 impl fmt::Display for Card {
@@ -183,12 +208,14 @@ pub enum GameView {
 pub struct CardDescription {
     pub card: Card,
     pub moves: Vec<Point>,
+    pub direction: CardDirection
 }
 
 impl From<Card> for CardDescription {
     fn from(card: Card) -> Self {
         let moves = card.moves();
-        CardDescription { card, moves }
+        let direction = card.direction();
+        CardDescription { card, moves, direction }
     }
 }
 

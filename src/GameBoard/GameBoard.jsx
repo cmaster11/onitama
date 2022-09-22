@@ -88,6 +88,7 @@ function GameBoard({
                 enabled={false}
                 setCard={setCard}
                 name={spare.card}
+                direction={spare.direction}
                 selected={false}
               />
             )}
@@ -154,6 +155,7 @@ function GameBoard({
                 enabled={false}
                 setCard={setCard}
                 name={spare.card}
+                direction={spare.direction}
                 selected={false}
               />
             )}
