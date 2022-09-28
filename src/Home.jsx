@@ -40,15 +40,18 @@ function Home() {
       >
         Local Multiplayer
       </Button>
-      <Button
-        component={Link}
-        to="/r/"
-        variant="contained"
-        color="primary"
-        className={classes.button}
-      >
-        Online Multiplayer
-      </Button>
+
+      {process.env.REACT_APP_MULTIPLAYER && (
+        <Button
+          component={Link}
+          to="/r/"
+          variant="contained"
+          color="primary"
+          className={classes.button}
+        >
+          Online Multiplayer
+        </Button>
+      )}
 
       {process.env.REACT_APP_LOCAL_AI && (
         <>
