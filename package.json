@@ -13,7 +13,7 @@
     "eject": "react-scripts eject",
     "build-native-dev": "wasm-pack build onitamalib --target bundler --out-dir ./src/onitamalib/build --dev",
     "build-native-release": "wasm-pack build onitamalib --target bundler --out-dir ./src/onitamalib/build --release",
-    "lint": "eslint --ext .js,.jsx src"
+    "lint": "eslint --fix --ext .js,.jsx src"
   },
   "eslintConfig": {
     "extends": [
