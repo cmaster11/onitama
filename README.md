@@ -1,7 +1,7 @@
 # Onitama App
 [![Docker Image CI](https://github.com/jackadamson/onitama/actions/workflows/docker-image.yml/badge.svg)](https://github.com/jackadamson/onitama/pkgs/container/onitama)
 
-Can be played at [https://onitama.app/](https://onitama.app/)
+Can be played at [https://onitama.cmaster11.me](https://onitama.cmaster11.me) (+bugfixes, -multiplayer), or the original can be played at [https://onitama.app/](https://onitama.app/).
 
 ## Roadmap
 
